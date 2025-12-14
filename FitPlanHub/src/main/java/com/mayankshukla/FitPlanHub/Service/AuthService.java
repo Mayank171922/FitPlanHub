@@ -2,11 +2,13 @@ package com.mayankshukla.FitPlanHub.Service;
 
 
 import com.mayankshukla.FitPlanHub.Dto.AuthResponse;
+import com.mayankshukla.FitPlanHub.Dto.LoginRequest;
 import com.mayankshukla.FitPlanHub.Dto.SignupRequest;
 import com.mayankshukla.FitPlanHub.Dto.UserDTO;
 import com.mayankshukla.FitPlanHub.Entity.Role;
 import com.mayankshukla.FitPlanHub.Entity.User;
 import com.mayankshukla.FitPlanHub.Repository.UserRepository;
+import com.mayankshukla.FitPlanHub.Security.JwtTokenProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
